@@ -1,14 +1,11 @@
 #include <iostream>
-#include <cstdlib> // Needed to use random numbers
+#include <cstdlib>
 
 using namespace std;
 
 int main()
 {
-    int amount; // hold player's balance amount
-    int bettingAmount;
-    int guess;
-    int dice; // hold computer generated number
+    int amount, bettingAmount;
     char choice, playername[36];
 
     cout << "\n\nEnter Your Name : ";
