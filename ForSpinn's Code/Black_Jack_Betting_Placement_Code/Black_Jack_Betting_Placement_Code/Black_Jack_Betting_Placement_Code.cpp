@@ -197,10 +197,7 @@ void cards() {
 
 void betting_placements();
 {
-	int amount; // hold player's balance amount
-	int bettingAmount;
-	int guess;
-	int dice; // hold computer generated number
+	int amount, bettingAmount;
 	char choice, playername[36];
 
 	cout << "\n\nEnter Your Name : ";
