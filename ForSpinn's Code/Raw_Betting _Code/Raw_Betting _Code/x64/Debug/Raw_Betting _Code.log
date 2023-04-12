@@ -1,0 +1,2 @@
+﻿  Test.cpp
+C:\Users\1\source\repos\Test\Test\Test.cpp(51,21): error C2065: 'playertotal': undeclared identifier
