@@ -1,0 +1,55 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   char player_name1,player_name2,player_name3, player_name4;
+   int players;
+    cout << "How many players will play?" << endl;
+    cout << "a maximum of 4 players is available" << endl;
+    cin >> players;
+    if ((players == 1) || (players == 2) || (players == 3) || (players == 4))
+    {
+        do
+        {
+            switch (players)
+            {
+            case 1:
+                cin >> player_name1;
+                break;
+
+            case 2:
+                cin >> player_name1;
+                cin >> player_name2;
+                break;
+
+            case 3:
+                cin >> player_name1;
+                cin >> player_name2;
+                cin >> player_name3;
+                break;
+
+            case 4:
+                cin >> player_name1;
+                cin >> player_name2;
+                cin >> player_name3;
+                cin >> player_name4;
+                break;
+            }
+        } while (players != 4);
+    }
+
+    else if ((players != 1) || (players != 2) || (players != 3) || (players != 4))
+    {
+
+        cout << "Please chose a valid player option" << endl;
+
+        cin >> players;
+        
+        return players;
+
+    }
+
+    return 0;
+
+}
