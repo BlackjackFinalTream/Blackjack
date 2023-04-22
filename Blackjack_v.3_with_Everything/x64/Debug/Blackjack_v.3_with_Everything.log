@@ -1,0 +1,4 @@
+﻿  Blackjack_v.3_with_Everything.cpp
+C:\Users\Alexa\source\repos\Blackjack_v.3_with_Everything\Blackjack_v.3_with_Everything\Blackjack_v.3_with_Everything.cpp(83,23): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\Alexa\source\repos\Blackjack_v.3_with_Everything\Blackjack_v.3_with_Everything\Blackjack_v.3_with_Everything.cpp(492,25): warning C4553: '==': result of expression not used; did you intend '='?
+  Blackjack_v.3_with_Everything.vcxproj -> C:\Users\Alexa\source\repos\Blackjack_v.3_with_Everything\x64\Debug\Blackjack_v.3_with_Everything.exe
