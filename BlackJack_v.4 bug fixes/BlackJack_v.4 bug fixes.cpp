@@ -81,7 +81,7 @@ int main()
 					{
 						if (houseTotal <= 21 && houseTotal > player1total)
 						{
-							player1total -= player1bamount;
+							playeramount1 -= player1bamount;
 							cout << player1 << " lose $" << player1bamount << " and now has $" << playeramount1 << endl;
 						}
 					}
@@ -89,6 +89,11 @@ int main()
 				if (houseTotal == 21 && player1total == 21) {
 					houseGive = round(player1bamount / 2);
 					playeramount1 += houseGive;
+					cout << player1 << " got half of $" << player1bamount << " and now has $" << playeramount1 << endl;
+				}
+				if (houseTotal == player1total) {
+					houseGive = round(playeramount1 / 2);
+					playeramount1 += houseGive; 
 					cout << player1 << " got half of $" << player1bamount << " and now has $" << playeramount1 << endl;
 				}
 				cout << "House had " << houseTotal << endl;
