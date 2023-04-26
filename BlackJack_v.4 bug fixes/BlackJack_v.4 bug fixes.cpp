@@ -8,7 +8,7 @@ using namespace std;
 
 // Variables need to have the card function work
 int card = 0, playertotal = 0, acecheck = 0, queencheck = 0, kingcheck = 0, jokercheck = 0, amount, playeramount1, playeramount2, playeramount3, bettingAmount, number_of_players,
-player1total, player2total, player3total, player1bamount, player2bamount, player3bamount, houseTotal, houseGive;
+player1total, player2total, player3total, player1bamount, player2bamount, player3bamount, houseTotal, houseGive, playerzero = 0;
 enum Cards { Ace = 1, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Joker = 10, Queen = 10, King = 10 };
 char answer, choice;
 string player1, player2, player3, playername;
@@ -253,7 +253,30 @@ int main()
 				break;
 			}
 			}
-			if ((playeramount1 == 0 || playeramount2 == 0) || playeramount3 == 0) {
+			switch (number_of_players)
+			{
+			case 1: {
+				if (playeramount1 == 0) {
+					playerzero = 1;
+				}
+				break;
+			}
+			case 2: {
+				if (playeramount2 == 0 || playeramount1 == 0) {
+					playerzero = 1;
+				}
+				break;
+			}
+			case 3: {
+				if ((playeramount1 == 0 || playeramount2 == 0) || playeramount3 == 0) {
+					playerzero = 1;
+				}
+				break;
+			}
+			default:
+				break;
+			}
+			if (playerzero == 1) {
 				break;
 			}
 			cout << "Do want to play another round? y/n\n";
@@ -262,7 +285,7 @@ int main()
 				break;
 			}
 		} while (true);
-		if ((playeramount1 == 0 || playeramount2 == 0) || playeramount3 == 0) {
+		if (playerzero == 1) {
 			break;
 		}
 		if (anstwo == 'n' || anstwo == 'N') {
@@ -344,7 +367,7 @@ void player3play() {
 }
 void hitplayer3() {
 	while (player3total <= 21) {
-		cout << "Do you want to Hit? ";
+		cout << "Do you want to Hit? h for Hit/s for Stay";
 		cin >> choice;
 		cout << endl;
 		if (choice == 'H' || choice == 'h') {
@@ -369,7 +392,7 @@ void hitplayer3() {
 }
 void hitplayer2() {
 	while (player2total <= 21) {
-		cout << "Do you want to Hit? ";
+		cout << "Do you want to Hit? h for Hit/s for Stay";
 		cin >> choice;
 		cout << endl;
 		if (choice == 'H' || choice == 'h') {
@@ -394,7 +417,7 @@ void hitplayer2() {
 }
 void hitplayer1() {
 	while (player1total <= 21) {
-		cout << "Do you want to Hit? ";
+		cout << "Do you want to Hit? h for Hit/s for Stay";
 		cin >> choice;
 		cout << endl;
 		if (choice == 'H' || choice == 'h') {
