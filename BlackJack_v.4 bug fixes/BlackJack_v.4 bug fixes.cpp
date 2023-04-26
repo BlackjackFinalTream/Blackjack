@@ -65,6 +65,7 @@ int main()
 				if (player1total == 21) {
 					playeramount1 += player1bamount;
 					cout << player1 << "had blackjack and won $" << player1bamount << " and now has $" << playeramount1 << endl;
+					break;
 				}
 				if (player1total > 21) {
 					playeramount1 -= player1bamount;
@@ -101,6 +102,7 @@ int main()
 				if (player1total == 21) {
 					playeramount1 += player1bamount;
 					cout << player1 << "had blackjack and won $" << player1bamount << " and now has $" << playeramount1 << endl;
+					break;
 				}
 				if (player1total > 21) {
 					playeramount1 -= player1bamount;
@@ -124,6 +126,7 @@ int main()
 				if (player2total == 21) {
 					playeramount2 += player2bamount;
 					cout << player2 << "had blackjack and won $" << player2bamount << " and now has $" << playeramount2 << endl;
+					break;
 				}
 				if (player2total > 21) {
 					playeramount2 -= player2bamount;
@@ -156,6 +159,7 @@ int main()
 				if (player1total == 21) {
 					playeramount1 += player1bamount;
 					cout << player1 << "had blackjack and won $" << player1bamount << " and now has $" << playeramount1 << endl;
+					break;
 				}
 				if (player1total > 21) {
 					playeramount1 -= player1bamount;
@@ -187,6 +191,7 @@ int main()
 				if (player2total == 21) {
 					playeramount2 += player2bamount;
 					cout << player2 << "had blackjack and won $" << player2bamount << " and now has $" << playeramount2 << endl;
+					break;
 				}
 				if (player2total > 21) {
 					playeramount2 -= player2bamount;
@@ -217,6 +222,7 @@ int main()
 				if (player3total == 21) {
 					playeramount3 += player3bamount;
 					cout << player3 << "had blackjack and won $" << player3bamount << " and now has $" << playeramount3 << endl;
+					break;
 				}
 				if (player3total > 21) {
 					playeramount3 -= player3bamount;
